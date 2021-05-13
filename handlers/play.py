@@ -406,7 +406,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "@LegendaryKeys_07"
+        user.first_name =  "KeysVc_Bot"
     usar = user
     wew = usar.id
     try:
@@ -684,7 +684,7 @@ async def jiosaavn(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "LegendaryKeys_07"
+        user.first_name =  "KeysVc_Bot"
     usar = user
     wew = usar.id
     try:
