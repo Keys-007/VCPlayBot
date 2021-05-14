@@ -34,7 +34,7 @@ async def start_(client: Client, message: Message):
                 ]
             ]
         )
-
+    )
 @Client.on_message(
     filters.command("start")
     & filters.group
