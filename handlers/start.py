@@ -37,7 +37,7 @@ async def start_(client: Client, message: Message):
     & filters.group
     & ~ filters.edited
 )
-async def start(client: Client, message: Message):
+async def start(client:Client, message: Message):
     await message.reply_text(
         "💁🏻‍♂️ Do you want to search for a YouTube video?",
         reply_markup=InlineKeyboardMarkup(
