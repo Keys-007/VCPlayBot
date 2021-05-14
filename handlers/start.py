@@ -93,7 +93,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "🔊 Channel", url="https://t.me/LegendaryKeys"
                     )
                 ]
             ]
