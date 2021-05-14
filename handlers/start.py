@@ -12,21 +12,24 @@ async def start_(client: Client, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAEDSoxgnd48EB9FLV2w-Hw9ut9rrJzk6QACKwIAAq2_gTaZSISROBBOVx8E")
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name}!
-\nI can play music in your group's voice chat
+\nI can play music in your group's voice chat.
 \nHit /help list of available commands.
  </b>""",
       
        
         reply_markup=InlineKeyboardMarkup(
             [
-              [  
+                [
+                    InlineKeyboardButton(
+                        "Assistant", url="https://t.me/LegendaryKeys_07"
+                    ),
                     InlineKeyboardButton(
                         "🔊 Channel", url="https://t.me/LegendaryKeys"
-                    ),
+                    )
                 ],
                 [
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/KeysVc_Bot?startgroup=true"
+                        "➕ Add To Your Group ➕", url="https://t.me/Keys_VCBot?startgroup=true"
                     ) 
                 ]
             ]
@@ -37,7 +40,7 @@ async def start_(client: Client, message: Message):
     & filters.group
     & ~ filters.edited
 )
-async def start(client:Client, message: Message):
+async def start(client: Client, message: Message):
     await message.reply_text(
         "💁🏻‍♂️ Do you want to search for a YouTube video?",
         reply_markup=InlineKeyboardMarkup(
@@ -90,7 +93,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LegendaryKeys"
+                        "🔊 Channel", url="https://t.me/LaylaList"
                     )
                 ]
             ]
