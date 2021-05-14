@@ -23,7 +23,6 @@ async def start_(client: Client, message: Message):
                     InlineKeyboardButton(
                         "🔊 Channel", url="https://t.me/LegendaryKeys"
                     ),
-                    
                 ],
                 [
                     InlineKeyboardButton(
